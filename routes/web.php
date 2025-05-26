@@ -7,3 +7,4 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/', [MoviesController::class,'homepage']);
+Route::get('/movies/{id}', [MoviesController::class, 'show'])->name('movies.detail');
